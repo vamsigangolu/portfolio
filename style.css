@@ -470,3 +470,40 @@ footer {
     font-size: 1.8rem;
   }
 }
+
+/* Mobile Nav Fix */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar .nav-links {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    margin-top: 1rem;
+  }
+
+  .navbar .nav-links.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+  }
+
+  .navbar .nav-links li {
+    width: 100%;
+    padding: 0.5rem 0;
+  }
+}
+
+/* Default hamburger hidden on large screens */
+.hamburger {
+  display: none;
+}

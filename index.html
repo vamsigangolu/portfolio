@@ -12,6 +12,7 @@
   <header>
     <nav class="navbar">
       <div class="logo">Vamsi Gangolu</div>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
       <ul class="nav-links">
         <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -111,5 +112,11 @@
   <footer>
     <p>&copy; 2025 Vamsi Gangolu. All rights reserved.</p>
   </footer>
+  <script>
+    function toggleMenu() {
+      const links = document.querySelector('.nav-links');
+      links.classList.toggle('show');
+    }
+  </script>
 </body>
 </html>
