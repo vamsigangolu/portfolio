@@ -89,10 +89,17 @@
   <h2 class="fade-in-heading">Contact Me</h2>
 
   <div class="contact-card">
-    <form action="mailto:1515115542v@gmail.com" method="POST" enctype="text/plain">
+    <form action="https://formspree.io/f/xldnndwa" method="POST">
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
       <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+      <!-- Optional spam protection -->
+      <input type="hidden" name="_captcha" value="false">
+
+      <!-- Optional redirect after form submit -->
+      <input type="hidden" name="_next" value="https://vamsigangolu.github.io/thank-you.html">
+
       <button type="submit">Send Message</button>
     </form>
 
