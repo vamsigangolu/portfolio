@@ -382,3 +382,91 @@ footer {
   font-size: 1.15rem;
   line-height: 1.8;
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.8rem;
+    padding: 1rem 0;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 0.75rem 1rem;
+    width: 100%;
+    text-align: left;
+    border-radius: 8px;
+  }
+
+  #hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+    height: auto;
+  }
+
+  #hero h1 {
+    font-size: 2.2rem;
+  }
+
+  #hero p {
+    font-size: 1.1rem;
+  }
+
+  .profile-img {
+    width: 120px;
+    height: 120px;
+    margin: 1rem auto;
+  }
+
+  section {
+    padding: 2rem 1rem;
+  }
+
+  .skills-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+  }
+
+  .project,
+  .prompt-template {
+    text-align: center;
+  }
+
+  .project-img,
+  .prompt-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .contact-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .contact-card form {
+    gap: 0.75rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+}
